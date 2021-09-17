@@ -43,7 +43,7 @@ const cookies = {
             return value.includes(cookieName);
         });
 
-        return value?.slice(value.indexOf('=') + 1);
+        return cookieValue?.slice(cookieValue.indexOf('=') + 1);
     },
     removeCookie(cookieName) {
         document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
