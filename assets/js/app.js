@@ -337,12 +337,15 @@ const app = {
 app.start();
 
 // cookies.removeCookie('username'); 
+// cookies.removeCookie('tasks'); 
 
 window.onload = function () {
     if (!cookies.get('username')) {
         getInfoUser.classList.add('display-flex');
     } else {
-        app.taskList = JSON.parse(cookies.get('tasks'));
+        if (cookies.get('tasks')) {
+            app.taskList = JSON.parse(cookies.get('tasks'));
+        }
         app.renderTask();
         wrapper.classList.add('display');
         $('.heading').textContent = 'What\'s up, ' + cookies.get('username');
