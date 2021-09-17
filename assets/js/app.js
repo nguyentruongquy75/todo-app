@@ -39,7 +39,7 @@ const cookies = {
     get(cookieName) {
         const arrCookies = document.cookie.split(';');
         
-        const value = arrCookies.find((value) => {
+        const cookieValue = arrCookies.find((value) => {
             return value.includes(cookieName);
         });
 
