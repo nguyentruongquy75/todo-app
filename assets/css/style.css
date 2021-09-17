@@ -313,11 +313,8 @@ body {
 }
 
 .create-task-button {
-    position: absolute;
-    bottom: 3.2rem;
-    left: 50%;
-    transform: translateX(-50%);
     width: 70%;
+    margin: 2.8rem auto 0;
     padding: 1.2rem 0;
     background-color: #076aff;
     border-radius: 2.4rem;
