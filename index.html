@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+
+    </header>
+
+    <main class="wrapper">
+        <h1 class="heading">What's up, Truong Quy</h1>
+
+        <section class="today-task">
+            <h4 class="today-task__heading">Today's task</h4>
+
+            <ul class="today-task__list">
+                
+            </ul>
+        </section>
+
+        <section class="create-task">
+            <div class="create-task__close">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <h6 class="create-task__heading">Create Task</h6>
+
+            <div class="create-task__input">
+                <input type="text" placeholder="Enter new task" id="task-name">
+                <span class="create-task__input-message"></span>
+            </div>
+
+            <div class="create-task__input">
+                <input type="text" placeholder="Task description" id="task-desc">
+            </div>
+
+            <div class="create-task__func">
+                
+                <label for="flag">
+                    <input type="checkbox" hidden id="flag">
+                    <div class="create-task__func-flag">
+                        <i class="far fa-flag"></i>
+                    </div>
+                </label>
+                <div class="create-task__func-color">
+
+                    <h6 class="create-task__func-color-heading">Choose color</h6>
+                    <div class="create-task__func-color-list">
+                        
+                        <label for="defaultColor">
+                            <input type="radio" checked hidden id="defaultColor" name="color" value="default">
+                            <div class="create-task__func-color-item create-task__func-color-item--default">&nbsp;</div>
+                        </label>
+                        <label for="color1">
+                            <input type="radio" hidden id="color1" name="color" value="1">
+                            <div class="create-task__func-color-item create-task__func-color-item--1">&nbsp; </div>
+                        </label>
+                        <label for="color2">
+                            <input type="radio" hidden id="color2" name="color" value="2">
+                            <div class="create-task__func-color-item create-task__func-color-item--2">&nbsp;</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="create-task-button">New task</div>
+        </section>
+    </main>
+
+    <div class="btn btn--light-pink create-task-btn">
+        <i class="fas fa-plus"></i>
+    </div>
+
+    <div class="getInfoUser">
+        <div class="getInfoUser-container">
+            <h4 class="hello">Todo App</h4>
+            <span class="slogan">Keep at it</span>
+            <div class="input-group">
+                <input class="username" type="text" placeholder="Enter your name">
+                <span class="message"></span>
+            </div>
+    
+            <div class="getInfoUser__btn">Next</div>
+        </div>
+    </div>
+
+    <div class="task-detail">
+        <div class="task-detail__close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="task-detail__group task-detail__name-container">
+            <h6 class="task-detail__heading">Task name</h6>
+            <p class="task-detail__name" contenteditable="true"></p>
+        </div>
+
+        <div class="task-detail__group">
+            <h6 class="task-detail__heading">Task description</h6>
+            <p class="task-detail__desc" contenteditable="true"></p>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
